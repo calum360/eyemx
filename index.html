@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<script>
+function scrollToNextSection() {
+  const nextSection = document.getElementById('opportunity');
+  if (nextSection) {
+    const yOffset = -40; // Offset for better visual spacing
+    const y = nextSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  }
+}
+
+
+const translations = {
+  en: {
+    headline: {
+      title: "Own Mexico's Vision",
+      domain: "eye.mx",
+      subtitle: "An irreplaceable digital asset that commands instant market authority and consumer trust across Mexico's most lucrative sectors. Now available for qualified organizations.",
+      discover: "Discover the Vision"
+    },
+    logic: {
+      title: "The Logic",
+      subtitle: "Why eye.mx is Indispensable for Your Mexican Market Strategy",
+      sections: {
+        marketAuthority: {
+          title: "Instant Market Authority",
+          points: [
+            "Achieve immediate market credibility through the universal recognition of 'eye' combined with Mexico's authoritative .mx extension",
+            "Eliminate customer acquisition friction with a domain that consumers intuitively understand and trust before they even visit",
+            "Establish unassailable brand positioning that competitors cannot replicate or challenge in the Mexican market",
+            "Transcend language barriers with a concept that resonates across Mexico's diverse demographic and cultural segments"
+          ]
+        },
+        localDominance: {
+          title: "Local Market Dominance",
+          points: [
+            "Command superior local SEO performance through Mexico's .mx extension, giving you inherent search engine preference over international competitors",
+            "Position as the recognized Mexican market leader in your chosen vertical before competitors recognize this asset's value",
+            "Capitalize on documented consumer preference for locally-relevant domains in Mexican digital commerce and e-commerce",
+            "Secure competitive advantages that international brands using .com domains cannot match in local search results"
+          ]
+        },
+        marketingVelocity: {
+          title: "Marketing Velocity",
+          points: [
+            "Capture high-volume organic search traffic from 'eye'-related queries specifically within Mexico's 128 million person market",
+            "Significantly reduce customer acquisition costs - often by 40% or more - through type-in traffic and exact-match SEO advantages",
+            "Achieve superior search engine rankings through exact-match keyword domain authority that compounds over time, as supported by longstanding SEO principles around 'Exact Match Domains'",
+            "Benefit from decades of established search behavior where consumers actively seek 'eye' solutions and services"
+          ]
+        },
+        assetAppreciation: {
+          title: "Digital Asset Appreciation",
+          points: [
+            "Secure a rare, appreciating digital asset that protects long-term brand equity while providing additional ROI",
+            "Prevent competitive acquisition of this irreplaceable domain by establishing ownership before full market recognition",
+            "Benefit from historical domain value appreciation of premium .mx domains",
+            "Protect market position permanently by owning the definitive domain before competitors understand its strategic value"
+          ]
+        }
+      }
+    },
+	// Newly added Multi-Vertical Dominance Section with English content
+multiVerticalDominance: {
+  title: "Multi-Vertical Dominance",
+  subtitle: "Strategic Applications Across Mexico's Highest-Value Markets",
+  industries: {
+    medicalTourism: {
+      title: "Medical Tourism & Ophthalmology",
+      description: "Mexico's $4.8 billion medical tourism market, with eye surgery representing the fastest-growing segment. Eye.mx instantly communicates medical authority and patient trust to international clients."
+    },
+    security: {
+      title: "Security & Surveillance Technology",
+      description: "Command Mexico's $2.1 billion security sector with a domain that intuitively communicates monitoring, protection, and advanced surveillance capabilities to enterprise clients."
+    },
+    ai: {
+      title: "AI & Data Analytics",
+      description: "Establish central identity for next-generation analytics in public health, smart city infrastructure, and enterprise optimization—backed by a domain that signals precision and technological leadership."
+    },
+    fintech: {
+      title: "Fintech & Digital Banking",
+      description: "Create a modern, memorable identity for financial technology targeting Mexico's 67 million underbanked population with a domain that builds instant trust and credibility."
+    },
+    photography: {
+      title: "Eyewear & Vision Care",
+      description: "Enhance your share of Mexico's eyewear market with a sleek and stylish digital brand. A perfect fit for premium optical retailers, forward-thinking eye care professionals, and innovative vision tech companies poised for rapid growth."
+    },
+    enterpriseSoftware: {
+      title: "Enterprise Software & SaaS",
+      description: "Perfect for vision-focused software solutions, business intelligence platforms, or monitoring applications targeting Mexico's growing enterprise technology market."
+    }
+  }
+}
+,
+
+
+    investmentOpportunity: {
+      title: "Exclusive Investment Opportunity",
+      description: "This transcends traditional domain acquisition by aligning brand, SEO, and market-specific strategy in a single asset. It represents a strategic investment in your organization’s digital sovereignty and market leadership across a $1.7 trillion economy."
+    },
+    formLabels: {
+      executiveName: "Executive Name",
+      email: "Corporate Email Address",
+      company: "Company/Organization",
+      strategicInterest: "Strategic Interest",
+      submit: "Submit Confidential Inquiry"
+    },
+    closingQuote: "In Mexico's rapidly digitalizing economy, first-mover advantages compound exponentially. This domain represents not just a marketing asset, but a strategic imperative for organizations serious about market leadership."
+  },
+  es: {
+  headline: {
+    title: "Conquiste la Visión de México",
+    domain: "eye.mx",
+    subtitle: "Un activo digital irremplazable que otorga autoridad inmediata y confianza del consumidor en los sectores más lucrativos de México. Ahora disponible para organizaciones calificadas.",
+    discover: "Descubra la Oportunidad"
+  },
+  logic: {
+    title: "La Lógica",
+    subtitle: "Por qué eye.mx es Indispensable para Su Estrategia en el Mercado Mexicano",
+    sections: {
+      marketAuthority: {
+        title: "Autoridad de Mercado Instantánea",
+        points: [
+          "Logre credibilidad de mercado inmediata mediante el reconocimiento universal de 'eye' combinado con la extensión .mx, que denota autoridad en México",
+          "Elimine la fricción en la adquisición de clientes con un dominio que los consumidores entienden y confían intuitivamente, incluso antes de visitarlo",
+          "Establezca un posicionamiento de marca inexpugnable que los competidores no podrán replicar ni desafiar en el mercado mexicano",
+          "Trascienda las barreras idiomáticas con un concepto que resuena en los diversos segmentos demográficos y culturales de México"
+        ]
+      },
+      localDominance: {
+        title: "Liderazgo Local Absoluto",
+        points: [
+          "Obtenga un rendimiento SEO local superior a través de la extensión .mx de México, dándole una preferencia inherente en los motores de búsqueda sobre los competidores internacionales",
+          "Posiciónese como el líder reconocido del mercado mexicano en su vertical elegida antes de que los competidores reconozcan el valor de este activo",
+          "Aproveche la preferencia documentada del consumidor por dominios relevantes localmente en el comercio digital y el comercio electrónico mexicano",
+          "Asegure ventajas competitivas que las marcas internacionales que usan dominios .com no pueden igualar en los resultados de búsqueda locales"
+        ]
+      },
+      marketingVelocity: {
+        title: "Velocidad de Marketing",
+        points: [
+          "Capte un alto volumen de tráfico orgánico proveniente de búsquedas relacionadas con 'eye', dentro del mercado mexicano de 128 millones de personas.",
+          "Reduzca significativamente los costos de adquisición —a menudo en un 40% o más— gracias al tráfico directo y las ventajas SEO de concordancia exacta.",
+          "Mejore su posicionamiento SEO con un dominio de concordancia exacta cuya autoridad crece con el tiempo, respaldado por décadas de principios SEO sobre 'Exact Match Domains'",
+          "Benefíciese de décadas de comportamiento de búsqueda establecido donde los consumidores buscan activamente soluciones y servicios relacionados con 'eye'."
+        ]
+      },
+      assetAppreciation: {
+        title: "Apreciación de Activos Digitales",
+        points: [
+          "Asegure un activo digital raro y en constante apreciación, que protege el valor de su marca a largo plazo y genera un ROI tangible.",
+          "Evite que la competencia lo adquiera asegurando su propiedad antes de que el mercado reconozca plenamente su valor.",
+          "Aproveche la apreciación histórica de los dominios .mx premium.",
+          "Proteja la posición en el mercado permanentemente al poseer el dominio definitivo antes de que los competidores comprendan su valor estratégico."
+        ]
+      }
+    }
+  },
+
+  // Newly added Multi-Vertical Dominance Section
+  multiVerticalDominance: {
+    title: "Dominio Multivertical",
+    subtitle: "Aplicaciones estratégicas en los sectores de mayor valor en México",
+    industries: {
+      medicalTourism: {
+        title: "Turismo Médico y Oftalmología",
+        description: "El mercado mexicano de turismo médico genera $4.800 millones de dólares, y las cirugías oculares son el segmento de más rápido crecimiento. Eye.mx comunica instantáneamente autoridad médica y confianza para pacientes internacionales."
+      },
+      security: {
+        title: "Tecnología de Seguridad y Vigilancia",
+        description: "Domine el sector de seguridad de $2.100 millones de dólares en México con un dominio que comunica intuitivamente monitoreo, protección y capacidades avanzadas de vigilancia para clientes empresariales."
+      },
+      ai: {
+        title: "Analítica de Datos e Inteligencia Artificial",
+        description: "Establezca una identidad central para análisis de nueva generación en salud pública, infraestructura inteligente y optimización empresarial—respaldada por un dominio que transmite precisión y liderazgo tecnológico."
+      },
+      fintech: {
+        title: "Fintech y Banca Digital",
+        description: "Cree una identidad moderna y memorable para tecnología financiera dirigida a los 67 millones de mexicanos sin acceso bancario formal, con un dominio que genera confianza y credibilidad instantáneas."
+      },
+      photography: {
+        title: "Gafas y Cuidado de la Visión",
+        description: "Mejore su participación en el mercado de gafas de México con una marca digital elegante y estilosa. Perfecta para minoristas ópticos de alta gama, profesionales visionarios del cuidado de la vista y empresas de tecnología visual innovadoras."
+      },
+      enterpriseSoftware: {
+        title: "Software Empresarial y SaaS",
+        description: "Ideal para soluciones de software centradas en visión, plataformas de inteligencia empresarial o aplicaciones de monitoreo en el creciente mercado tecnológico de México."
+      }
+    }
+  },
+
+  investmentOpportunity: {
+    title: "Oportunidad Exclusiva de Inversión",
+    description: "Esto trasciende la adquisición tradicional de dominios al alinear marca, SEO y estrategia de mercado en un solo activo. Representa una inversión estratégica en la soberanía digital y el liderazgo de mercado de su organización dentro de una economía de $1.7 billones de dólares."
+  },
+  formLabels: {
+    executiveName: "Nombre del Ejecutivo",
+    email: "Correo Corporativo",
+    company: "Empresa u Organización",
+    strategicInterest: "Interés Estratégico",
+    submit: "Enviar Consulta Confidencial"
+  },
+  closingQuote: "\"En la economía mexicana en rápida digitalización, las ventajas del primer movimiento se multiplican exponencialmente. Este dominio no es solo un activo de marketing, sino un imperativo estratégico para organizaciones que realmente aspiran al liderazgo del mercado\""
+}
+
+};
+
+document.querySelector('.headline-title').innerHTML = translations.headline.title + " <span class='domain-highlight'>eye.mx</span>";
+
+function loadLanguage() {
+  // Check sessionStorage for stored language
+  let userLang = sessionStorage.getItem('language') || 'en'; // Default to 'en' if not set
+
+  // Set the active class on the appropriate button
+  if (userLang === 'es') {
+    document.getElementById('es-btn').classList.add('active');
+    document.getElementById('en-btn').classList.remove('active');
+  } else {
+    document.getElementById('en-btn').classList.add('active');
+    document.getElementById('es-btn').classList.remove('active');
+  }
+
+  // Update the language content based on stored language
+  if (userLang === 'es') {
+    document.documentElement.lang = 'es';
+    updateText('es');
+  } else {
+    document.documentElement.lang = 'en';
+    updateText('en');
+  }
+}
+
+function switchLang(language) {
+  const content = document.querySelector('.language-content'); // Grab the content container
+  
+
+  // Fade-out effect
+  content.style.transition = 'opacity 0.15s ease-out';  // Apply a fade-out transition
+  content.style.opacity = '0.6'; // Start reducing opacity
+  
+  
+
+  setTimeout(() => {
+    // Update the language content after fading out
+    sessionStorage.setItem('language', language); 
+    loadLanguage(); // Call your existing language loading function
+	 
+
+    // Fade-in effect
+    content.style.transition = 'opacity 0.25s ease-in';  // Apply a fade-in transition
+    content.style.opacity = '1';  // Bring opacity back to 1 after content has been updated
+  }, 150); // Wait for fade-out transition to finish (500ms)
+ 
+}
+
+// Event listener to trigger language change
+
+
+
+
+
+function updateText(language) {
+  const text = translations[language];
+  document.querySelector('h1').textContent = text.headline.title;
+  document.querySelector('.subtitle').textContent = text.headline.subtitle;
+  document.querySelector('.scroll-cue span').textContent = text.headline.discover; // Update the "Discover the Vision/Opportunity" text
+
+  document.querySelector('#opportunity .section-title').textContent = text.logic.title;
+  document.querySelector('#opportunity .section-subtitle').textContent = text.logic.subtitle;
+  document.querySelector('.cta-title').textContent = text.investmentOpportunity.title;
+  document.querySelector('.cta-subtitle').textContent = text.investmentOpportunity.description;
+
+  // Update form labels
+  document.querySelector('[for="name"]').textContent = text.formLabels.executiveName;
+  document.querySelector('[for="email"]').textContent = text.formLabels.email;
+  document.querySelector('[for="company"]').textContent = text.formLabels.company;
+  document.querySelector('[for="message"]').textContent = text.formLabels.strategicInterest;
+  document.querySelector('.submit-btn').textContent = text.formLabels.submit;
+  document.querySelector('#message').placeholder = language === 'es' ? 'Por favor describa su interés estratégico en eye.mx y el caso de uso previsto...' : 'Please describe your strategic interest in eye.mx & intended use case...'; // Update placeholder text
+
+  // Closing quote
+  document.querySelector('.closing-statement').textContent = text.closingQuote;
+
+  // Logic section
+  updateLogicSection(text.logic.sections);
+
+  // --- NEW CODE FOR MULTI-VERTICAL DOMINANCE SECTION ---
+  updateMultiVerticalDominanceSection(text.multiVerticalDominance);
+  // --- END NEW CODE ---
+}
+
+function updateLogicSection(sections) {
+  for (let key in sections) {
+    const section = sections[key];
+    const sectionIndex = Object.keys(sections).indexOf(key) + 1;
+    const h3Element = document.querySelector(`#opportunity .logic-card:nth-of-type(${sectionIndex}) h3`);
+    if (h3Element) { // Check if element exists before updating
+      h3Element.textContent = section.title;
+    }
+    let listItems = document.querySelectorAll(`#opportunity .logic-card:nth-of-type(${sectionIndex}) ul li`);
+    section.points.forEach((point, index) => {
+      if (listItems[index]) { // Check if element exists before updating
+        listItems[index].textContent = point;
+      }
+    });
+  }
+}
+
+// --- NEW FUNCTION TO HANDLE MULTI-VERTICAL DOMINANCE ---
+function updateMultiVerticalDominanceSection(sectionData) {
+  const multiVerticalSection = document.querySelector('.multi-industry-section');
+  if (multiVerticalSection) {
+    const titleElement = multiVerticalSection.querySelector('.section-title');
+    const subtitleElement = multiVerticalSection.querySelector('.section-subtitle');
+
+    if (titleElement) {
+      titleElement.textContent = sectionData.title;
+    }
+    if (subtitleElement) {
+      subtitleElement.textContent = sectionData.subtitle;
+    }
+
+    const industryCards = multiVerticalSection.querySelectorAll('.industry-card');
+    const industryKeys = Object.keys(sectionData.industries);
+
+    industryCards.forEach((card, index) => {
+      const key = industryKeys[index];
+      if (key && sectionData.industries[key]) {
+        const industry = sectionData.industries[key];
+        const titleH4 = card.querySelector('h4');
+        const descriptionP = card.querySelector('p');
+
+        if (titleH4) {
+          titleH4.textContent = industry.title;
+        }
+        if (descriptionP) {
+          descriptionP.textContent = industry.description;
+        }
+      }
+    });
+  }
+}
+// --- END NEW FUNCTION ---
+
+function detectLanguage() {
+  const spanishCountries = ['MX', 'AR', 'CO', 'PE', 'VE', 'ES', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']; // Expanded list of Spanish-speaking countries
+  const usersLang = navigator.language.split('-')[0].toLowerCase(); // Get primary language (e.g., 'es' from 'es-MX')
+  const userCountry = navigator.language.split('-')[1] ? navigator.language.split('-')[1].toUpperCase() : ''; // Get country code if available
+
+  if (userLang === 'es') {
+    return 'es';
+  }
+  return 'en';
+  
+    if (usersLang.startsWith('es')) { // Spanish
+    document.getElementById('es-btn').classList.add('active');
+    document.getElementById('en-btn').classList.remove('active');
+  } else if(usersLang.startsWith('en')){ // Default to English
+alert("fanny");
+    document.getElementById('en-btn').classList.add('active');
+    document.getElementById('es-btn').classList.remove('active');
+  }
+
+}
+
+function detectUserLanguage() {
+    // Get the browser's language setting (e.g., 'en-US', 'es-ES')
+    const usersLang = navigator.language || navigator.userLanguage;
+    
+    // Log the detected language (for debugging)
+    console.log("Detected language: " + usersLang);
+    
+    // If language is Spanish, set Spanish button as active
+    if (usersLang.startsWith('es')) { 
+        document.getElementById('es-btn').classList.add('active');
+        document.getElementById('en-btn').classList.remove('active');
+    } else { 
+        document.getElementById('en-btn').classList.add('active');
+        document.getElementById('es-btn').classList.remove('active');
+    }
+}
+
+
+
+function setLanguage(lang) {
+  // Save the choice for later (so switchLang can pick it up)
+  sessionStorage.setItem('language', lang);
+  // Apply all the translations & button states
+  loadLanguage();
+}
+
+
+
+
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eye.mx - Premium Digital Asset Acquisition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --accent-gold: #B87333;
+            --dark-navy: #0A1628;
+            --medium-navy: #1E3A8A;
+            --slate-blue: #2C3E50;
+            --light-gray: #F8F9FA;
+            --glass-white: rgba(248, 249, 250, 0.05);
+            --gradient-primary: linear-gradient(135deg, #0A1628 0%, #1E3A8A 35%, #2C3E50 65%, #0A1628 100%);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #B87333 100%);
+            --shadow-subtle: 0 2px 20px rgba(0, 0, 0, 0.1);
+            --shadow-premium: 0 20px 60px rgba(212, 175, 55, 0.15);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-micro: all 0.2s ease-out;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--light-gray);
+            background-color: var(--dark-navy);
+            overflow-x: hidden;
+            font-feature-settings: "kern" 1, "liga" 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Premium Typography System */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            margin-bottom: clamp(1rem, 2.5vw, 2rem);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--primary-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+			margin-bottom: 0rem;
+			margin-top: 0rem;
+		
+			min-height: 75px;
+
+        }
+		h1 {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--primary-gold);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            color: var(--light-gray);
+        }
+
+        h4 {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            color: var(--primary-gold);
+        }
+
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+            line-height: 1.8;
+            font-weight: 400;
+        }
+		.eye-icon {
+  width: 240px;
+  height: auto;
+  filter: drop-shadow(0 0 4px gold);
+  animation: eyeBlink 8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+
+        .subtitle {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            font-weight: 300;
+            color: var(--primary-gold);
+            opacity: 0.9;
+            margin-bottom: 3rem;
+            max-width: 65ch;
+            margin-left: auto;
+            margin-right: auto;
+		
+			min-height: 20vh;
+        }
+		
+		@media (max-width: 768px){
+		.subtitle{
+		line-height: 1.3;
+		}
+		h1{
+		font-size: 2rem;
+		}
+		}
+
+        /* Hero Section with Premium Aesthetics */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: var(--gradient-primary);
+            overflow: hidden;
+        }
+
+	
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(30, 58, 138, 0.12) 0%, transparent 50%),
+                conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(248, 249, 250, 0.02) 90deg, transparent 180deg);
+            animation: subtleFloat 20s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 8%;
+            right: 8%;
+            width: clamp(150px, 20vw, 300px);
+            height: clamp(150px, 20vw, 300px);
+            background: var(--gradient-gold);
+            opacity: 0.1;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            animation: gentleRotate 30s linear infinite;
+        }
+
+        @keyframes subtleFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+
+        @keyframes gentleRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+      .hero-content {
+  max-width: 1200px;
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  text-align: center;
+  z-index: 1;
+  position: relative;
+   margin-top: -2vh; /* Instead of -3vh */
+  animation: fadeInUpCustom 1s ease-out forwards;
+}
+
+
+      @keyframes fadeInUpCustom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-8%);
+  }
+}
+
+
+        .domain-highlight {
+            color: var(--primary-gold);
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+			min-height: 0px;
+			padding: 0px;
+			margin-bottom: 1rem;
+	
+        }
+
+        /* Premium SVG Icons */
+        .icon-container {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            box-shadow: var(--shadow-premium);
+            transition: var(--transition-smooth);
+        }
+
+        .icon-container:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 25px 80px rgba(212, 175, 55, 0.25);
+        }
+
+        .icon-svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--dark-navy);
+        }
+
+        /* Main Content with Improved Spacing */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 5vw, 3rem);
+			padding-bottom: 1rem;
+			padding-top: 3rem;
+        }
+
+        .section {
+            margin-bottom: clamp(4rem, 8vw, 8rem);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: clamp(3rem, 6vw, 5rem);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: var(--gradient-gold);
+            border-radius: 1px;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            color: var(--light-gray);
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        /* Premium Glass-morphism Cards */
+        .logic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+            gap: clamp(2rem, 4vw, 3rem);
+            margin-top: 4rem;
+        }
+
+        .logic-card {
+            background: linear-gradient(135deg, 
+                rgba(44, 62, 80, 0.4) 0%, 
+                rgba(30, 58, 138, 0.3) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 16px;
+            padding: clamp(2rem, 4vw, 3rem);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+        }
+
+        .logic-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-premium);
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+
+        .logic-card h3 {
+            color: var(--primary-gold);
+            margin-bottom: 1.5rem;
+			text-align: center;
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+        }
+
+        .logic-card ul {
+            list-style: none;
+        }
+
+        .logic-card li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: clamp(0.9rem, 1.5vw, 1.125rem);
+            line-height: 1.7;
+            opacity: 0.9;
+            transition: var(--transition-micro);
+        }
+
+        .logic-card li:hover {
+            opacity: 1;
+            transform: translateX(2px);
+        }
+
+        .logic-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            width: 6px;
+            height: 6px;
+            background: var(--primary-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+        }
+
+        /* Industry Grid with Enhanced Cards */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: clamp(1.5rem, 3vw, 2.5rem);
+            margin-top: 3rem;
+			
+        }
+
+        .industry-card {
+            background: linear-gradient(135deg, 
+                rgba(44, 62, 80, 0.6) 0%, 
+                rgba(10, 22, 40, 0.8) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: clamp(1.5rem, 3vw, 2.5rem);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-subtle);
+            border-left-color: var(--accent-gold);
+        }
+
+        .industry-card h4 {
+            margin-bottom: 1rem;
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+        }
+
+        .industry-card p {
+            font-style: italic;
+            color: var(--light-gray);
+            opacity: 0.85;
+            font-size: clamp(0.9rem, 1.25vw, 1.125rem);
+        }
+
+        /* Premium CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, 
+                rgba(30, 58, 138, 0.8) 0%, 
+                rgba(44, 62, 80, 0.9) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: clamp(4rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+            text-align: center;
+            margin-top: 6rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            margin-bottom: 1.5rem;
+            color: var(--light-gray);
+        }
+
+        .cta-subtitle {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            margin-bottom: 3rem;
+            color: var(--primary-gold);
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Premium Form Design */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, 
+                rgba(10, 22, 40, 0.9) 0%, 
+                rgba(44, 62, 80, 0.7) 100%);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: clamp(2rem, 4vw, 3rem);
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--primary-gold);
+            font-weight: 500;
+            font-size: clamp(0.9rem, 1.25vw, 1.125rem);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            background: rgba(44, 62, 80, 0.6);
+            color: var(--light-gray);
+            font-size: clamp(0.9rem, 1.25vw, 1.125rem);
+            font-family: inherit;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+            background: rgba(44, 62, 80, 0.8);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-premium);
+        }
+
+        /* Premium Footer */
+        .footer {
+            background: linear-gradient(135deg, 
+                rgba(10, 22, 40, 0.95) 0%, 
+                rgba(30, 58, 138, 0.8) 100%);
+            padding: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .closing-statement {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            color: var(--primary-gold);
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Responsive Refinements */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 1rem;
+            }
+
+            .logic-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero::after {
+                width: 120px;
+                height: 120px;
+            }
+
+            .icon-container {
+                width: 40px;
+                height: 40px;
+            }
+
+            .icon-svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus states for accessibility */
+        .submit-btn:focus,
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: 2px solid var(--primary-gold);
+            outline-offset: 2px;
+        }
+		h1.domain-highlight {
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+
+#lang-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  min-width: 200px;
+ 
+  text-align: center;
+
+
+
+
+}
+@media (max-width: 768px) {
+  #lang-toggle {
+    top: 0.75rem;  /* Adjust positioning for mobile */
+    left: 50%;
+    transform: translateX(-50%);  /* Keep it centered */
+	margin-bottom: 1rem;
+	
+  }
+}
+
+
+#lang-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--light-gray);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#lang-toggle button:hover {
+  color: var(--primary-gold);
+}
+.eye-blink {
+  width: 240px;
+  margin: 0 auto 1.5rem;
+  animation: blink 8s infinite;
+  transform-origin: center;
+  display: block;
+}
+
+@keyframes blink {
+  0%, 97%, 100% {
+    transform: scaleY(1);
+  }
+  98%, 99% {
+    transform: scaleY(0.1);
+  }
+}
+
+.hero-content {
+  transform: translateY(-8%);
+
+
+
+
+}
+@media (max-width: 768px) {
+  .hero-content {
+    transform: translateY(-4%);
+  }
+}
+.scroll-cue-wrapper {
+  height: 60px;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+   pointer-events: auto;
+  cursor: pointer;
+}
+
+
+.scroll-cue {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: #d4af37;
+  font-family: 'Inter', sans-serif;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+   pointer-events: auto;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: 600;
+
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6); /* subtle dark glow */
+}
+
+
+.arrow-down {
+  width: 18px;
+  height: 18px;
+  margin: 10px auto 0;
+  border-left: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+  transform: rotate(-45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-45deg);
+  }
+}
+
+
+.scroll-cue.fade-out {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.scroll-cue span {
+  font-size: 0.95rem;
+  color: var(--primary-gold);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.scroll-line {
+  width: 2px;
+  height: 24px;
+  background: var(--primary-gold);
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gold);
+  animation: scrollPulse 2.8s infinite ease-in-out;
+}
+
+@keyframes scrollPulse {
+  0% { top: -100%; opacity: 0; }
+  30% { top: 0%; opacity: 1; }
+  60% { top: 100%; opacity: 0; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes cueFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes eyeBlink {
+  0%, 96.5%, 100% {
+    transform: scaleY(1);
+  }
+  47.5%, 52.5% {
+    transform: scaleY(0.08);
+  }
+}
+.eye-wrapper {
+  position: relative;
+  width: 240px;
+ margin-bottom: 0;
+ top: 50px;
+  display: inline-block;
+}
+
+.eye-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 0 2px gold);
+}
+
+
+
+@keyframes blinkOverlay {
+  0%, 96%, 100%   { top: -100%; }
+  47.5%, 52.5%    { top: 0%; }
+}
+
+.icon-images{
+	width: 88px;
+}
+
+.container-mexico{
+ width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       
+            border-radius: 12px;
+            box-shadow: var(--shadow-premium);
+            transition: var(--transition-smooth);
+	}
+	
+	
+	.eyesvg{
+		margin-top: auto;
+	}
+	
+	.container-mexico{
+		margin-left: auto;
+	}
+
+.section:last-of-type {
+  padding-bottom: 0rem; /* or less */
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+.cards-section {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
+
+#lang-toggle button.active {
+  color: var(--primary-gold);
+}
+
+/* Apply Mexican Flag Gradient to the Text */
+.eye-span {
+  color: #006847;  /* Mexican Green for 'eye' */
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.dot-span {
+  color: #FFFFFF;  /* White for the period (.) */
+  font-weight: 700;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.mx-span {
+  color: #CE1126;  /* Mexican Red for 'mx' */
+  font-weight: 700;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+/* Apply a cleaner gradient to 'eye.mx' text */
+.domain-highlight {
+  font-weight: 700;
+
+  background: linear-gradient(to right, #006847 35%, #fff 35%, #fff 65%, #CE1126 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  /* Make the text transparent to show the gradient */
+  text-align: center;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);  /* Adding a subtle shadow around the text */
+  line-height: 1.2;
+}
+
+
+/* Optional: Adjust the period for better readability */
+.dot-span {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Add slight shadow for visibility */
+}
+
+
+
+/* Premium Domain Industry Stats Section Styling */
+.stats-section {
+    background: var(--primary-gold); /* Dark background to make stats pop */
+    color: var(--light-gray);
+    padding: 3rem 1rem;
+}
+
+.stats-section p, .stats-section h2 {
+	color: var(--dark-navy);
+}
+.stats-section logic-card {
+background: linear-gradient(135deg, 
+                rgba(44, 62, 80, 0.6) 0%, 
+                rgba(10, 22, 40, 0.8) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+}
+
+
+    </style>
+</head>
+<body>
+<div id="lang-toggle">
+  <button id="en-btn" onclick="switchLang('en')">English</button>
+  <button id="es-btn" onclick="switchLang('es')">Español</button>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+		<div class="eye-wrapper">
+		<svg class="eye-icon eye-blink" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#D4AF37">
+      <path d="M32 16C20 16 9.7 25 5 32c4.7 7 15 16 27 16s22.3-9 27-16c-4.7-7-15-16-27-16zm0 26a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/>
+    </svg>
+	  <div class="eyelid"></div>
+	</div>
+	
+<div class="language-content">
+            <h1>Own Mexico's Vision </h1> 
+			<h2 class="domain-highlight"><span class="eye-span">eye<span class="dot-span">.<span class="mx-span">mx</span></h1>
+            <p class="subtitle">An irreplaceable digital asset that commands instant market authority and consumer trust across Mexico's most lucrative sectors. Now available for qualified organizations.</p>
+	<div class="scroll-cue-wrapper">
+  <div class="scroll-cue" id="scrollCue" onclick="scrollToNextSection()">
+     <span>Discover the Vision</span>
+  <div class="arrow-down"></div>
+  </div>
+  </div>
+</div>
+
+
+	   </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Business Logic Section -->
+        <section class="section" id="opportunity">
+            <div class="section-header">
+                <h2 class="section-title">The Logic</h2>
+                <p class="section-subtitle">Why eye.mx is Indispensable for Your Mexican Market Strategy</p>
+            </div>
+
+            <div class="logic-grid">
+                <div class="logic-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg eye-icon eye-blink eyesvg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#D4AF37">
+      <path d="M32 16C20 16 9.7 25 5 32c4.7 7 15 16 27 16s22.3-9 27-16c-4.7-7-15-16-27-16zm0 26a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/>
+    </svg>
+                    </div>
+                    <h3>Instant Market Authority</h3>
+                    <ul>
+                        <li>Achieve immediate market credibility through the universal recognition of "eye" combined with Mexico's authoritative .mx extension</li>
+                        <li>Eliminate customer acquisition friction with a domain that consumers intuitively understand and trust before they even visit</li>
+                        <li>Establish unassailable brand positioning that competitors cannot replicate or challenge in the Mexican market</li>
+                        <li>Transcend language barriers with a concept that resonates across Mexico's diverse demographic and cultural segments</li>
+                    </ul>
+                </div>
+
+                <div class="logic-card">
+                    <div class="container-mexico">
+                       <img src="icons/mexico-icon.png" alt="mexico icon" class="icon-images"/>
+                    </div>
+                    <h3>Local Market Dominance</h3>
+                    <ul>
+                        <li>Command superior local SEO performance through Mexico's .mx extension, giving you inherent search engine preference over international competitors</li>
+                        <li>Position as the recognized Mexican market leader in your chosen vertical before competitors recognize this asset's value</li>
+                        <li>Capitalize on documented consumer preference for locally-relevant domains in Mexican digital commerce and e-commerce</li>
+                        <li>Secure competitive advantages that international brands using .com domains cannot match in local search results</li>
+                    </ul>
+                </div>
+
+                <div class="logic-card">
+                   
+                       <div class="container-mexico">
+                        <img src="icons/market.png" alt="market magnifying glass" class="icon-images"/>
+              
+                    </div>
+                    <h3>Marketing Velocity</h3>
+                    <ul>
+                        <li>Capture high-volume organic search traffic from "eye"-related queries specifically within Mexico's 128 million person market</li>
+                        <li>Significantly reduce customer acquisition costs - often by 40% or more - through type-in traffic and exact-match SEO advantages</li>
+                        <li>Achieve superior search engine rankings through exact-match keyword domain authority that compounds over time, as supported by longstanding SEO principles around "Exact Match Domains"</li>
+                        <li>Benefit from decades of established search behavior where consumers actively seek "eye" solutions and services</li>
+                    </ul>
+                </div>
+
+                <div class="logic-card">
+                    <div class="container-mexico">
+                        <img src="icons/bullions.png" alt="gold bullions" class="icon-images"/>
+               </div>
+                    <h3>Digital Asset Appreciation</h3>
+                    <ul>
+                        <li>Secure a rare, appreciating digital asset that protects long-term brand equity while providing additional ROI</li>
+                        <li>Prevent competitive acquisition of this irreplaceable domain by establishing ownership before full market recognition</li>
+                        <li>Benefit from historical domain value appreciation with premium .mx domains showing 15-25% annual growth</li>
+                        <li>Protect market position permanently by owning the definitive domain before competitors understand its strategic value</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Versatility Section -->
+        <section class="section multi-industry-section">
+            <div class="section-header">
+                <h2 class="section-title">Multi-Vertical Dominance</h2>
+                <p class="section-subtitle">Strategic Applications Across Mexico's Highest-Value Markets</p>
+            </div>
+
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h4>Medical Tourism & Ophthalmology</h4>
+                    <p>Mexico's $4.8 billion medical tourism market, with eye surgery representing the fastest-growing segment. Eye.mx instantly communicates medical authority and patient trust to international clients.</p>
+                </div>
+
+                <div class="industry-card">
+                    <h4>Security & Surveillance Technology</h4>
+                    <p>Command Mexico's $2.1 billion security sector with a domain that intuitively communicates monitoring, protection, and advanced surveillance capabilities to enterprise clients.</p>
+                </div>
+
+                <div class="industry-card">
+                    <h4>AI & Data Analytics</h4>
+                    <p>Establish central identity for next-generation analytics in public health, smart city infrastructure, and enterprise optimization—backed by a domain that signals precision and technological leadership.</p>
+                </div>
+
+                <div class="industry-card">
+                    <h4>Fintech & Digital Banking</h4>
+                    <p>Create a modern, memorable identity for financial technology targeting Mexico's 67 million underbanked population with a domain that builds instant trust and credibility.</p>
+                </div>
+
+                <div class="industry-card">
+                    <h4>Eyewear & Vision Care</h4>
+                    <p>Enhance your share of Mexico's eyewear market with a sleek and stylish digital brand. A perfect fit for premium optical retailers, forward-thinking eye care professionals, and innovative vision tech companies poised for rapid growth.</p>
+                </div>
+				<div class="industry-card">
+                    <h4>Enterprise Software & SaaS</h4>
+                    <p>Perfect for vision-focused software solutions, business intelligence platforms, or monitoring applications targeting Mexico's growing enterprise technology market.</p>
+                </div>
+            </div>
+			
+            </div>
+        </section>
+    </main>
+	
+	<!-- Premium Domain Industry Stats Section -->
+
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Exclusive Investment Opportunity</h2>
+            <p class="cta-subtitle">This transcends traditional domain acquisition by aligning brand, SEO, and market-specific strategy in a single asset. It represents a strategic investment in your organization's digital sovereignty and market leadership across a $1.7 trillion economy.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Executive Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Corporate Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Strategic Interest</label>
+                    <textarea id="message" name="message" placeholder="Please describe your strategic interest in eye.mx & intended use case..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Confidential Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="closing-statement">
+                "In Mexico's rapidly digitalizing economy, first-mover advantages compound exponentially. This domain represents not just a marketing asset, but a strategic imperative for organizations serious about market leadership"</p>
+        </div>
+    </footer>
+	<script>
+  const scrollCue = document.getElementById('scrollCue');
+
+  function handleScrollCue() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop <= 1) {
+      scrollCue.classList.remove('fade-out');
+    } else {
+      scrollCue.classList.add('fade-out');
+    }
+  }
+
+  window.addEventListener('scroll', handleScrollCue);
+  window.addEventListener('load', handleScrollCue);
+  
+  window.onload = function() {
+    detectUserLanguage();
+  }
+  
+document.addEventListener("DOMContentLoaded", () => {
+  const userLang = navigator.language || navigator.userLanguage;
+  const lang = userLang.startsWith('es') ? 'es' : 'en'; // Detect language
+  
+  setLanguage(lang);  // Set the language
+  updateText(lang);   // Update the text based on the detected language
+});
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
